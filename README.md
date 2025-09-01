@@ -47,14 +47,18 @@ Migrar para uma arquitetura moderna e eficiente, utilizando **Docker Compose**, 
 - Docker Compose instalado  
 
 ### 🔹 Passos
-1. Clone o repositório:
+Clone o repositório:
 
-git clone https://github.com/seu-usuario/dimdim-docker.git
-cd dimdim-docker
+  https://github.com/KarenMarquesS/AbrigoSmart.git
 
-docker-compose up -d --build
+  https://github.com/KarenMarquesS/dcAbrigoSmart.git
 
-docker ps
+entra no diretório clonado
+  cd dcAbrigoSmart
+
+  docker-compose up -d --build
+
+  docker ps
 
 ## Acesse a aplicação no navegador:
 👉 http://localhost:8080
@@ -69,24 +73,24 @@ docker ps
 
 🩺 Health Checks
 
-  App: /actuator/health (Spring Boot)
-  DB: verifica se o Oracle está aceitando conexões
+  * App: /actuator/health (Spring Boot)
+  * DB: verifica se o Oracle está aceitando conexões
 
 🚨 Troubleshooting
 
-  Erro de conexão app → db: Verifique DB_HOST=db
-  Porta já em uso: Edite o docker-compose.yml e troque as portas mapeadas (ex: 1521:1521)
-  Banco não sobe: Confira os logs com: docker logs db_abrigosmart
+  * Erro de conexão app → db: Verifique DB_HOST=db
+  * Porta já em uso: Edite o docker-compose.yml e troque as portas mapeadas (ex: 1521:1521)
+  * Banco não sobe: Confira os logs com: docker logs db_abrigosmart
 
 🎥 Evidências
 
-  Aplicação rodando no navegador ou postman
-  Banco acessível via aplicação Oracle Developer
-  Health checks dos serviços funcionando
+  * Aplicação rodando no navegador ou postman
+  * Banco acessível via aplicação Oracle Developer
+  * Health checks dos serviços funcionando
 
 👤 Autor
 
-Equipe DimDim – Desenvolvido para o 1º CP – 2º Semestre – Docker Compose
+  Equipe DimDim – Desenvolvido para o 1º CP – 2º Semestre – Docker Compose
 
         Nome	                  RM	   GitHub
     Fernanda Budniak de Seda	558274	Febudniak
